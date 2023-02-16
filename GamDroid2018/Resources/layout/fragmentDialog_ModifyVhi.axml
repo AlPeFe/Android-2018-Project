@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/vhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:minHeight="?android:attr/actionBarSize"
+            android:paddingBottom="@dimen/spacing_micro"
+            android:paddingTop="@dimen/spacing_micro"
+            android:textSize="@dimen/size_edit_text" />
+        <Button
+            android:id="@+id/btnChangeVhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vhi"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:text=" Cambiar Vehículo " />
+    </RelativeLayout>
+</ScrollView>

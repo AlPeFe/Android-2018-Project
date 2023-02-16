@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/type_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro" />
+            <EditText
+                android:id="@+id/user_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Código"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <EditText
+                android:id="@+id/km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kilómetros"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <Button
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="Iniciar Turno" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linearMain"
+            android:layout_margin="30dp"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/shiftRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

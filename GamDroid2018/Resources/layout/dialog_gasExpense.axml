@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/entry_km"
+        android:hint="Kilómetros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/entry_km" />
+    <EditText
+        android:id="@+id/entry_liters"
+        android:hint="Litros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entry_km" />
+    <EditText
+        android:id="@+id/entry_price"
+        android:hint="Importe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entry_liters" />
+</RelativeLayout>

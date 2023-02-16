@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:id="@+id/linearMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/gam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo" />
+        <EditText
+            android:id="@+id/user_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cliente"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="10"
+            android:minHeight="?android:attr/actionBarSize"
+            android:paddingBottom="@dimen/spacing_micro"
+            android:paddingTop="@dimen/spacing_micro"
+            android:textSize="@dimen/size_edit_text" />
+        <EditText
+            android:id="@+id/vhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehículo"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="10"
+            android:minHeight="?android:attr/actionBarSize"
+            android:paddingBottom="@dimen/spacing_micro"
+            android:paddingTop="@dimen/spacing_micro"
+            android:textSize="@dimen/size_edit_text" />
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:minHeight="?android:attr/actionBarSize"
+            android:paddingBottom="@dimen/spacing_micro"
+            android:paddingTop="@dimen/spacing_micro"
+            android:textSize="@dimen/size_edit_text" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/groupOrientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radioVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vertical"
+               />
+            <RadioButton android:id="@+id/radioHoriz"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horizontal"
+                />
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnConfiguration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#307FC1"
+            android:text="Configurar" />
+    </LinearLayout>
+</RelativeLayout>

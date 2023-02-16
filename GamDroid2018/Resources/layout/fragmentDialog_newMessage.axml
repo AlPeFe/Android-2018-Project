@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <Spinner
+        android:id="@+id/messageCodeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:paddingBottom="@dimen/spacing_micro"
+        android:paddingTop="@dimen/spacing_micro" />
+    <EditText
+        android:id="@+id/bodyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Contenido"
+        android:maxLines="5"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:minHeight="?android:attr/actionBarSize"
+        android:paddingBottom="@dimen/spacing_micro"
+        android:paddingTop="@dimen/spacing_micro"
+        android:textSize="@dimen/size_edit_text" />
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+</LinearLayout>

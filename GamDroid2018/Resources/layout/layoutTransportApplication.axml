@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearMainPatientData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/patientData_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:text="Datos de Paciente"
+                android:textColor="#ce3232"
+                android:textSize="40sp" />
+            <EditText
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <EditText
+                android:id="@+id/patient_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:maxLength="10"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <DatePicker
+                android:id="@+id/pickerBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearOAddresses"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Oaddresses_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:text="Origen"
+                android:textColor="#ce3232"
+                android:textSize="40sp" />
+            <Switch
+                android:id="@+id/AddressHospSwitch"
+                android:layout_width="wrap_content"
+                android:showText="true"
+                android:textOff="DOM."
+                android:textOn="HOSP."
+                android:layout_height="wrap_content"
+                android:checked="false" />
+            <Spinner
+                android:id="@+id/OPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro" />
+            <Spinner
+                android:id="@+id/Oprovinces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro" />
+            <Spinner
+                android:id="@+id/Ocities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro" />
+            <EditText
+                android:id="@+id/addressO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección"
+                android:inputType="textCapWords"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:layout_below="@+id/linearMainPatientData"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:text="Siguiente"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</ScrollView>

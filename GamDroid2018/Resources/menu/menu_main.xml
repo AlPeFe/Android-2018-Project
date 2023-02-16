@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+  <item
+    android:id="@+id/action_expenses"
+    android:text="Gastos"
+    android:icon="@drawable/ic_money"
+    android:title="Gastos"
+    app:showAsAction="always"/>
+  <item
+   android:id="@+id/action_refresh"
+   android:text="Refrescar"
+   android:icon="@drawable/ic_refresh"
+   android:title="Refrescar"
+   app:showAsAction="always"/>
+  <item
+  android:id="@+id/action_close"
+  android:text="Refrescar"
+  android:icon="@drawable/ic_cancel_black_24dp"
+  android:title="Refrescar"
+  app:showAsAction="always"/>
+  <item
+       android:id="@+id/action_vhi"
+       android:text="Vehículo"
+       android:icon="@drawable/ic_car_24dp"
+       android:title="Vehículo"
+       app:showAsAction="always|withText"/>
+ 
+</menu>

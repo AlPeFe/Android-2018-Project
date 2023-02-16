@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_servicio"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Servicios" />
+        <item
+            android:id="@+id/nav_shift"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="Turnos" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_create_black_24dp"
+            android:title="Mensajes" />       
+    </group>
+</menu>

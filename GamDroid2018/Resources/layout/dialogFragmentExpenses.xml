@@ -1,0 +1,76 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/expense_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro" />
+            <EditText
+                android:id="@+id/descriptionValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <EditText
+                android:id="@+id/km_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Km"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <EditText
+                android:id="@+id/inputAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Importe"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+            <EditText
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tarjeta"
+                android:maxLength="5"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:minHeight="?android:attr/actionBarSize"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textSize="@dimen/size_edit_text" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSendExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearMain"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:text=" Enviar " />
+    </RelativeLayout>
+</ScrollView>
